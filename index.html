@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FWarnet</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display&family=Ubuntu&display=swap');
+  </style>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+<div class="container">
+  <!-- navbar -->
+  <nav>
+    <div class="logo">
+      <img src="logo.jpg" alt="This is my logo"/>
+    </div>
+    <div class="list">
+      <a href="index.html" class="abold">home</a>
+      <a href="Fwarnet ~ Daftar-game.html">daftar-game</a>
+      <a href="#">projek</a>
+      <a href="#">contact</a>
+    </div>
+    <div class="toggle" id="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  
+  <!-- halaman1 -->
+  <div class="halaman1">
+    <div class="teks-sambutan">
+      <p>Welcome to my warnet</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus cupiditate laborum, distinctio cumque? Perspiciatis optio quis maiores molestias quibusdam dolorem, ab aut nostrum facere, saepe iusto mollitia ducimus voluptates quod.</p>
+    </div>
+    <div class="gambar">
+      <img alt="Warnet" name="slide">
+      <section class="iklan">
+        <button>
+         <img src="button-bg.jpg" alt="game">
+        </button>
+        <button>
+         <img src="button-bg-1.png" alt="game">
+        </button>
+        <button>
+         <img src="button-bg-2.png" alt="game">
+        </button>
+      </section>
+    </div>
+  </div>
+  <!-- halaman1 end -->
+  
+  <!-- halaman2 -->
+  <div class="halaman2">
+    <section class="namaHalaman">
+      <p>Daftar Game</p>
+      <a href="Fwarnet ~ Daftar-game.html">Lihat Semua</a>
+    </section>
+    <section class="game" id="game">
+      
+      <div class="item">
+        <img src="button-bg-1.png" alt="Game">
+        <section class="info-game">
+          <p>Ayo Dance</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dignissimos, eligendi, aspernatur eaque quos esse consequuntur alias. Dolor facilis praesentium nostrum mollitia similique, sit excepturi, repellendus ducimus voluptatum suscipit ipsa voluptates eveniet quos laborum tempore doloremque aliquid. Veniam, mollitia, maxime.</p>
+        </section>
+      </div>
+      
+      <div class="item">
+        <img src="button-bg.jpg" alt="Game">
+        <section class="info-game">
+          <p>Ragnarok online</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dignissimos, eligendi, aspernatur eaque quos esse consequuntur alias. Dolor facilis praesentium nostrum mollitia similique, sit excepturi, repellendus ducimus voluptatum suscipit ipsa voluptates eveniet quos laborum tempore doloremque aliquid. Veniam, mollitia, maxime.</p>
+        </section>
+      </div>
+      
+      <div class="item">
+        <img src="button-bg-2.png" alt="Game">
+        <section class="info-game">
+          <p>GTA (grand theft auto)</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dignissimos, eligendi, aspernatur eaque quos esse consequuntur alias. Dolor facilis praesentium nostrum mollitia similique, sit excepturi, repellendus ducimus voluptatum suscipit ipsa voluptates eveniet quos laborum tempore doloremque aliquid. Veniam, mollitia, maxime.</p>
+        </section>
+      </div>
+      
+    </section>
+  </div>
+  <!-- halaman2 end -->
+  
+  <!-- halaman3 -->
+  <div class="halaman3">
+    <p class="judul">Daftar Makanan & Minuman</p>
+    <div class="list_snack">
+      
+      <div class="snack_item">
+        <img src="produk-2.jpg" alt="Indomie Goreng">
+        <p class="nama_item">Indomie Goreng Original Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, eum.</p>
+        <p class="harga_item">Rp.8,000</p>
+        <button onclick="tambahkanProdukKeKeranjang('indomie goreng',8000)">Beli</button>
+      </div>
+      
+      <div class="snack_item">
+        <img src="produk-3.jpg" alt="Indomie Goreng">
+        <p class="nama_item">Indomie Goreng Aceh</p>
+        <p class="harga_item">Rp.5,000</p>
+        <button onclick="tambahkanProdukKeKeranjang('indomie goreng Aceh',5000)">Beli</button>
+      </div>
+      
+      <div class="snack_item">
+        <img src="produk-1.jpg" alt="Indomie Goreng">
+        <p class="nama_item">Indomie Goreng Rendang</p>
+        <p class="harga_item">Rp.6,500</p>
+        <button onclick="tambahkanProdukKeKeranjang('Indomie Goreneg Rendang',6500)">Beli</button>
+      </div>
+      
+      <div class="snack_item">
+        <img src="produk-4.jpg" alt="Indomie Goreng">
+        <p class="nama_item">Indomie Ayam Bawang.</p>
+        <p class="harga_item">Rp.6,000</p>
+        <button onclick="tambahkanProdukKeKeranjang('Indomie Ayam Bawang',6000)">Beli</button>
+      </div>
+      
+      <div class="snack_item">
+        <img src="produk-5.jpg" alt="Indomie Goreng">
+        <p class="nama_item">Indomie Takoyaki.</p>
+        <p class="harga_item">Rp.7,000</p>
+        <button onclick="tambahkanProdukKeKeranjang('Indomie Takoyaki',7000)">Beli</button>
+      </div>
+      
+      <div class="snack_item">
+        <img src="produk-6.jpg" alt="Indomie Goreng">
+        <p class="nama_item">Indomie Tori Miso Ramen.</p>
+        <p class="harga_item">Rp.7,000</p>
+        <button onclick="tambahkanProdukKeKeranjang('Indomie Ayam Bawang',7000)">Beli</button>
+      </div>
+      
+      <div class="snack_item">
+        <img src="produk-7.jpg" alt="Indomie Goreng">
+        <p class="nama_item">Indomie Shoyu Ramen.</p>
+        <p class="harga_item">Rp.7,000</p>
+        <button onclick="tambahkanProdukKeKeranjang('Indomie Shoyu',7000)">Beli</button>
+      </div>
+      
+    </div>
+  </div>
+  <!-- halaman3 end -->
+  
+  <!-- daftar-keranjang -->
+  <div class="daftar-keranjang" id="keranjang">
+    <p class="judul">Daftar Keranjang</p>
+    <div class="list-barang">
+     
+     
+     
+      <span class="total_belanja"></span>
+      <div class="item1">
+        <div class="pemberitahuan">
+          <i>:)</i>
+          <p>Yah keranjang masih kosong :( kamu belum membeli barang apapun</p>
+        </div>
+      </div>
+      
+    </div>
+    <p class="totalnya"></p>
+    <button class="checkout" onclick="cekout()"></button>
+  </div>
+  <!-- daftar-keranjang end -->
+  
+  <!-- halaman4 -->
+  <div class="halaman4">
+    <section class="button">
+      <button id="kanan">&#10094;</button>
+      <button id="kiri">&#10095;</button>
+    </section>
+    <div class="wrapper">
+      <section class="carousel">
+          <div class="item">
+             
+          </div>
+          <div class="item">
+             
+          </div>
+          <div class="item">
+             
+          </div>
+          <div class="item">
+             
+          </div>
+          <div class="item">
+             
+          </div>
+          <div class="item">
+             
+          </div>
+          <div class="item">
+             
+          </div>
+      </section>
+    </div>
+  </div>
+  <!-- halaman4 end -->
+  
+  <!-- footer -->
+  <footer>
+    <section class="sosmed">
+      <section class="nama-sosmed">
+        <i class="ph ph-facebook-logo"></i>
+      </section>
+      <section class="nama-sosmed">
+        <i class="ph ph-instagram-logo"></i>
+      </section>
+      <section class="nama-sosmed">
+        <i class="ph ph-whatsapp-logo"></i>
+      </section>
+    </section>
+    <section class="link">
+      <a href="index.html">Home</a>
+      <a href="#game">Daftar-game</a>
+      <a href="#">Daftar Makanan</a>
+      <a href="#">Contact</a>
+    </section>
+    <p>Copyright © 2023 <span>Fwarnet</span></p>
+  </footer>
+  <!-- footer end -->
+</div>
+<!-- <div class="alert">
+  <div class="alert-content">
+    <span>&times;</span>
+    <p class="alert-danger">Peringatan!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vero non culpa, eaque eum cupiditate quasi ratione officia officiis voluptatem incidunt iure quia maxime, dignissimos placeat labore earum pariatur numquam.</p>
+  </div>
+</div> -->
+<script src="main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

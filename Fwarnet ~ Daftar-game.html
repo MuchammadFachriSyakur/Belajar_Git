@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fwarnet ~ Daftar-game</title>
+  <link rel="stylesheet" href="daftar-Game.css" type="text/css" media="all" />
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display&family=Ubuntu&display=swap');
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- navbar -->
+  <nav>
+    <div class="logo">
+      <img src="logo.jpg" alt="This is my logo"/>
+    </div>
+    <div class="list">
+      <a href="index.html">home</a>
+      <a href="#" class="abold">about</a>
+      <a href="#">projek</a>
+      <a href="#">contact</a>
+    </div>
+    <div class="toggle" id="toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  
+   <!-- halaman2 -->
+  <div class="halaman2">
+    <section class="namaHalaman">
+      <p>Daftar Game</p>
+      <a href="index.html">Kembali</a>
+    </section>
+    <section class="game">
+      
+      <div class="item">
+        <img src="button-bg-1.png" alt="Game">
+        <section class="info-game">
+          <p>Ayo Dance</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dignissimos, eligendi, aspernatur eaque quos esse consequuntur alias. Dolor facilis praesentium nostrum mollitia similique, sit excepturi, repellendus ducimus voluptatum suscipit ipsa voluptates eveniet quos laborum tempore doloremque aliquid. Veniam, mollitia, maxime.</p>
+          <button><a href="#">Detail</a></button>
+        </section>
+      </div>
+      
+      <div class="item">
+        <img src="button-bg.jpg" alt="Game">
+        <section class="info-game">
+          <p>Ragnarok online</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dignissimos, eligendi, aspernatur eaque quos esse consequuntur alias. Dolor facilis praesentium nostrum mollitia similique, sit excepturi, repellendus ducimus voluptatum suscipit ipsa voluptates eveniet quos laborum tempore doloremque aliquid. Veniam, mollitia, maxime.</p>
+          <button><a href="#">Detail</a></button>
+        </section>
+      </div>
+      
+      <div class="item">
+        <img src="button-bg-2.png" alt="Game">
+        <section class="info-game">
+          <p>GTA (grand theft auto)</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dignissimos, eligendi, aspernatur eaque quos esse consequuntur alias. Dolor facilis praesentium nostrum mollitia similique, sit excepturi, repellendus ducimus voluptatum suscipit ipsa voluptates eveniet quos laborum tempore doloremque aliquid. Veniam, mollitia, maxime.</p>
+          <button><a href="#">Detail</a></button>
+        </section>
+      </div>
+      
+      <div class="item">
+        <img src="button-bg-1.png" alt="Game">
+        <section class="info-game">
+          <p>Ayo Dance</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dignissimos, eligendi, aspernatur eaque quos esse consequuntur alias. Dolor facilis praesentium nostrum mollitia similique, sit excepturi, repellendus ducimus voluptatum suscipit ipsa voluptates eveniet quos laborum tempore doloremque aliquid. Veniam, mollitia, maxime.</p>
+          <button><a href="#">Detail</a></button>
+        </section>
+      </div>
+      
+      <div class="item">
+        <img src="button-bg-1.png" alt="Game">
+        <section class="info-game">
+          <p>Ayo Dance</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dignissimos, eligendi, aspernatur eaque quos esse consequuntur alias. Dolor facilis praesentium nostrum mollitia similique, sit excepturi, repellendus ducimus voluptatum suscipit ipsa voluptates eveniet quos laborum tempore doloremque aliquid. Veniam, mollitia, maxime.</p>
+          <button><a href="#">Detail</a></button>
+        </section>
+      </div>
+      
+      <div class="item">
+        <img src="button-bg-1.png" alt="Game">
+        <section class="info-game">
+          <p>Ayo Dance</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dignissimos, eligendi, aspernatur eaque quos esse consequuntur alias. Dolor facilis praesentium nostrum mollitia similique, sit excepturi, repellendus ducimus voluptatum suscipit ipsa voluptates eveniet quos laborum tempore doloremque aliquid. Veniam, mollitia, maxime.</p>
+          <button><a href="#">Detail</a></button>
+        </section>
+      </div>
+    </section>
+  </div>
+  <!-- halaman2 end -->
+  
+</div>
+<script type="text/javascript" charset="utf-8">
+//toggle
+const toggle = document.getElementById('toggle');
+const span1 = document.querySelector(".container nav .toggle span:nth-child(1)");
+const span2 = document.querySelector(".container nav .toggle span:nth-child(2)");
+const span3 = document.querySelector(".container nav .toggle span:nth-child(3)");
+const hilang = document.querySelector(".container nav .list");
+
+toggle.addEventListener("click", (e)=>{
+  toggle.classList.toggle('tKlik');
+  span1.classList.toggle('span1');
+  span2.classList.toggle('span2');
+  span3.classList.toggle('span3');
+  hilang.classList.toggle('muncul');
+});
+//toggle end
+</script>
+</body>
+</html>

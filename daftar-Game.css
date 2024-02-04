@@ -1,0 +1,307 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b0d2d;
+  color: #CCCCCC;
+}
+ /* Navbar */
+ .container nav{
+   box-sizing: border-box;
+   width: 100%;
+   height: 80px;
+   background-color: black;
+   position: sticky;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 5px 10px;
+   gap: 10px;
+   z-index: 100000;
+ }
+ .container nav .logo{
+   box-sizing: border-box;
+   width: 50px;
+   height: 50px;
+   border-radius: 7px;
+   border: 1px solid #241259;
+   padding: 3px;
+ }
+ .container nav .logo img{
+   box-sizing: border-box;
+   width: 100%;
+   height: 100%;
+   background-color: blueviolet;
+   background-image: url('');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 7px;
+ }
+ .container nav .list{
+   box-sizing: border-box;
+   width: 60%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ .container nav .list a{
+   text-decoration: none;
+   color: white;
+   text-transform: capitalize;
+   font-size: 16px;
+ }
+  .container nav .list a.abold{
+   font-size: 20px;
+   color: blueviolet;
+ }
+ .container nav .toggle{
+   box-sizing: border-box;
+   height: 40px;
+   padding: 5px;
+   gap: 5px;
+   border-radius: 5px;
+   border: 1px solid #241259;
+   display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: stretch;
+ }
+ .container nav .toggle.tKlik{
+   background-color: blueviolet;
+ }
+ .container nav .toggle span{
+   box-sizing: border-box;
+   width: 28px;
+   height: 3px;
+   background-color: #CCCCCC;
+   display: block;
+ }
+ .container nav .toggle span:nth-child(1){
+   transform-origin: 0 0;
+ }
+ .container nav .toggle span:nth-child(1).span1{
+   transform: rotate(45deg) translate(-1px,-1px);
+ }
+ .container nav .toggle span:nth-child(2).span2{
+   transform: scale(0);
+   opacity: 0;
+ }
+ .container nav .toggle span:nth-child(3){
+   transform-origin: 0 100%;
+ }
+ .container nav .toggle span:nth-child(3).span3{
+   transform: rotate(-45deg) translate(-1px,0);
+ }
+  /* halaman2 */
+ .container .halaman2{
+   box-sizing: border-box;
+   width: 1280px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 3px;
+ }
+ .container .halaman2 section.namaHalaman{
+   box-sizing: border-box;
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   justify-content: center;
+   padding: 3px;
+   z-index: 2;
+ }
+ .container .halaman2 section.namaHalaman::before{
+   content: " ";
+   box-sizing: border-box;
+   width: 300px;
+   height: 300px;
+   background-color: blueviolet;
+   border-radius: 200%;
+   position: absolute;
+   right: 0;
+   filter: blur(150px);
+   z-index: -1;
+ }
+ .container .halaman2 section.namaHalaman p{
+   font-size: 25px;
+   font-weight: 500;
+   text-transform: uppercase;
+ }
+  .container .halaman2 section.namaHalaman a{
+    text-align: right;
+    color: #CCC;
+    text-transform: capitalize;
+    z-index: 2;
+    cursor: pointer;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+ .container .halaman2 section.game{
+   box-sizing: border-box;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   z-index: 2;
+ } 
+ .container .halaman2 section.game .item{
+   box-sizing: border-box;
+   width: 300px;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 3px;
+   gap: 3px;
+   background-color: white;
+   color: black;
+ }
+ .container .halaman2 section.game .item img{
+   box-sizing: border-box;
+   width: 250px;
+   height: 250px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 5px;
+   object-fit: cover;
+ }
+ .container .halaman2 section.game .item section.info-game{
+   box-sizing: border-box;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   border-top: 1px solid #CCC;
+   gap: 10px;
+ }
+ .container .halaman2 section.game .item section.info-game p:nth-child(1){
+   box-sizing: border-box;
+   width: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: capitalize;
+ }
+ .container .halaman2 section.game .item section.info-game p:nth-child(2){
+   box-sizing: border-box;
+   width: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   font-size: 15px;
+   font-weight: 300;
+   text-transform: capitalize;
+ }
+  .container .halaman2 section.game .item section.info-game button{
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+  }
+  .container .halaman2 section.game .item section.info-game button a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+ /* Responsife */
+ @media(max-width: 1980px){
+   .container nav{
+     justify-content: center;
+   }
+ }
+ @media(max-width: 1280px){
+   .container .halaman2{
+     width: 100%;
+   }
+ }
+ @media(max-width: 930px){
+   .container .halaman2 section.game{
+     justify-content: center;
+   }
+   .container .halaman2 section.game .item{
+     width: 250px;
+   }
+   .container .halaman2 section.game .item img{
+     width: 240px;
+     height: 240px;
+   }
+ }
+ @media(max-width: 778px){
+   .container .halaman2 section.game .item{
+     width: 200px;
+   }
+   .container .halaman2 section.game .item img{
+     width: 100%;
+     height: 200px;
+   }
+ }
+ @media(max-width: 768px){
+   .container nav{
+     justify-content: space-between;
+   }
+   .container nav .toggle{
+     display: flex;
+   }
+   .container nav .list{
+     width: 300px;
+     height: 300px;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     background-color: black;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgb(255,255,255,0.25);
+     position: absolute;
+     top: 80px;
+     right: 1%;
+     transform: translateY(15px);
+     opacity: 0;
+     transition: all .6s;
+     z-index: 100;
+   }
+   .container nav .list.muncul{
+     transform: translateY(0);
+     opacity: 1;
+   }
+ }
+ @media(max-width: 417px){
+   .container .halaman2 section.game .item{
+     width: 150px;
+   }
+   .container .halaman2 section.game .item img{
+     width: 100%;
+     height: 150px;
+   }
+ }
+ @media(max-width: 330px){
+   .container .halaman2 section.game .item{
+     width: 125px;
+   }
+   .container .halaman2 section.game .item img{
+     width: 100%;
+     height: 125px;
+   }
+ }
